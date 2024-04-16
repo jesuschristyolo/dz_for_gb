@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка фотографии продукта</title>
+</head>
+<body>
+<h1>Загрузка фотографии продукта</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="id_photo">Выберите фото продукта:</label><br>
+    <input type="file" name="photo" id="id_photo"><br><br>
+    <input type="submit" value="Загрузить">
+</form>
+</body>
+</html>
